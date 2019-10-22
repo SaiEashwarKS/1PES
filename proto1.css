@@ -41,7 +41,7 @@ div#vertDivLeft{
 }
 div#vertDivRight{
   position: fixed;
-  top: 290px;
+  top: 290pxx;
   bottom: 90px;
   right: 50px;
   color: #112d4e;
@@ -78,6 +78,7 @@ div.tile{
   text-align: left;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-right: 5%;
   transition-property: all;
   transition-duration: 1.3s;
 }
@@ -87,6 +88,10 @@ div.tile:hover{
   opacity: 1;
   background-color: #008187;
 }
+a#aOrderFood:link{
+  text-decoration: none;
+}
+
 div.homeButtons{
   float: left;
   border: 1px solid #222831;

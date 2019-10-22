@@ -1,0 +1,74 @@
+div.Title{
+    background-color: #393e46;
+    color: white;
+    padding: 2.5%;
+    font-family: verdana;
+}
+div.hotelNames ul{
+    list-style: none;
+}
+
+div.hotelNames ul li{
+    background-color: #00adb5 ;
+    color: white;
+    width: 20%;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    transition-property: all;
+    transition-duration: 1.2s;
+}
+
+div.hotelNames ul li:hover{
+    background-color:  #008187;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+div.menuTile div {
+    position: absolute;
+    top: 30%;
+    bottom: 10%;
+    left: 30%;
+    right: 10%;
+    background-color: #eeeeee;
+    padding:2% 5% 5% 5%;
+    font-family: verdana;
+    font-size: 1.2em;
+    color: #393e46;
+    line-height: 30px;
+    visibility: hidden;
+    overflow: scroll;
+}
+div.menuTile table{
+    font-family: verdana;
+    border-collapse: collapse;
+    width: 100%;
+    height: 80%;
+}
+div.menuTile td, th {
+    border: 1px solid #dedede;
+    text-align: left;
+    padding: 8px;
+}
+div.menuTile tr:nth-child(even){
+    background-color: #dddddd;
+}
+div.menuTile td:nth-child(even){
+    text-align: center;
+}
+div.menuTile th:nth-child(even){
+    text-align: center;
+}
+#sub {
+    padding: 5px;
+    background-color: limegreen;
+    color: white;
+    font-family: verdana;
+    font-size: 1.1em;
+    margin-top: 20px;
+    float: right;
+    border: none;
+}
