@@ -15,9 +15,14 @@
     </div>
     <div class="wantSomething">
         <i>Want something?</i>
-        <input type="button" class="searchResource" value="Search to see if someone has already requested for it" />
-        <i>Or</i>
-        <input type="button" class="searchResource" value="Be the first one to ask!" onclick="addRequest()">
+        <div id="searchDiv">
+            <input type="button" class="searchResource" value="See if someone has already requested for it" onclick="search()" />
+            <br>
+            <input type="button" id="closeBtn" value="Close" onclick="close()" />
+            <ul id="searchUl"></ul>
+        </div>
+        <i>Or</i><br>
+        <input type="button" class="searchResource" value="Be the first one to ask!" onclick="addRequest()" />
     </div>
    
     
@@ -57,9 +62,7 @@
     }
 
     function reply(e){
-        console.log(e.target.id + "Btn");
         outer = document.getElementById(e.target.id + "Req");
-        console.log(outer);
         var name = prompt("Enter your name");
         if(name!=undefined){
             var reply = prompt("Leave your message");
@@ -75,6 +78,33 @@
             replyDiv.appendChild(replyMsg);
             outer.appendChild(replyDiv);
         }
+    }
+    let pos = 0;
+    function search(){
+        var i;
+        titles = document.getElementsByClassName("titles");
+        console.log(titles.length);
+        document.getElementById("closeBtn").style.display = "block";
+        ul = document.getElementById("searchUl");
+        ul.style.display = "block";
+        for (i = pos; i < titles.length; i++)
+        {
+            if(titles[i] != undefined){
+                li = document.createElement("li");
+                a = document.createElement("a");
+                a.setAttribute("href", "#" + titles[i].textContent.trim());
+                a.innerHTML = titles[i].textContent;
+                li.appendChild(a);
+                ul.appendChild(li);
+            }
+        }
+        pos++;
+    }
+    function close(){
+        closeBtn = document.getElementById("closeBtn");
+        closeBtn.style.display = "none";
+        ul = document.getElementById("searchUl");
+        ul.style.display = "none";
     }
     
 </script>
