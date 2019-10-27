@@ -1,0 +1,76 @@
+#name{
+    font-size: 2.2em;
+}
+div#title{
+    background-color:  #222831;
+    font-family: verdana;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.searchResource{
+    
+    border: none;
+    margin: 10px;
+    padding: 9px;
+    background-color: #00adb5;
+    font-family: verdana;
+    font-size: 1.2em;
+    color: #222831;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.searchResource:hover{
+    background-color: #008187;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    padding: 13px;
+}
+div.wantSomething{
+    text-align: center;
+    color: #3c4245;
+    padding: 3px;
+}
+#discussionTile{
+    margin: auto;
+    width: 85%;
+    border: 2px solid #222831;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+div.requests{
+    margin-top:10px;
+    border-left: 1px solid #008187;
+    font-family: verdana;
+}
+div.titles{
+    color: navy;
+    padding: 4px;
+    font-size: 1.3em;
+}
+div.descriptions{
+    padding: 4px;
+}
+.replyBtns{
+    margin-left: 5px;
+    margin-top: 5px;
+    border: none;
+    padding: 5px;
+    font-family: verdana;
+    color: teal;
+    background-color: silver;
+}
+div.replies{
+    margin-left:30px;
+    margin-top:5px;
+    padding:5px;
+    font-family: verdana;
+    color: chocolate;
+    border-left: 1px solid orangered;
+}
+div.names{
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+div.replyMsgs{
+    margin-left: 5px;
+}
