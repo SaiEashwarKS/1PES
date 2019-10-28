@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resources</title>
+    <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+    <div id="title">
+        <h1 id="name">Resources</h1>
+        <i>Want any book or software? Just Ask!</i><br>
+        <i>And if you have anything that someone needs, do help...</i>
+    </div>
+    <div class="wantSomething">
+        <i>Want something?</i>
+        <div id="searchDiv">
+            <input type="button" class="searchResource" value="See if someone has already requested for it" onclick="search()" />
+            <br>
+            <input type="button" id="closeBtn" value="Close" onclick="close()" />
+            <ul id="searchUl"></ul>
+        </div>
+        <i>Or</i><br>
+        <input type="button" class="searchResource" value="Be the first one to ask!" onclick="addRequest()" />
+    </div>
+   
+    
+    <div id="discussionTile">
+            
+    </div>
+    
+</body>
+<script>
+    function addRequest(){
+        var title = prompt("Enter a short and concise title");
+        if(title!=undefined){
+            var msg = prompt("Describe your request");
+            var outer = document.getElementById("discussionTile");
+            var request = document.createElement("div");
+            request.setAttribute("class","requests");
+            request.setAttribute("id", title.trim()+"Req")
+            var titleDiv = document.createElement("div");
+            titleDiv.setAttribute("class", "titles");
+            titleDiv.innerHTML = title;
+            titleDiv.setAttribute("id", title.trim() + "Title");
+            request.appendChild(titleDiv);
+            msgDiv = document.createElement("div");
+            msgDiv.setAttribute("class", "descriptions");
+            msgDiv.innerHTML = msg;
+            request.appendChild(msgDiv);
+            outer.appendChild(request);
+            replyBtn = document.createElement("input");
+            replyBtn.setAttribute("type", "button");
+            replyBtn.setAttribute("id", title.trim());
+            replyBtn.setAttribute("class", "replyBtns");
+            //replyBtn.setAttribute("onclick", "reply()");
+            replyBtn.setAttribute("value","Reply");
+            replyBtn.addEventListener("click", reply);
+            request.appendChild(replyBtn);
+        }
+    }
+
+    function reply(e){
+        outer = document.getElementById(e.target.id + "Req");
+        var name = prompt("Enter your name");
+        if(name!=undefined){
+            var reply = prompt("Leave your message");
+            var nameDiv = document.createElement("div");
+            nameDiv.setAttribute("class", "names");
+            nameDiv.innerHTML = name;
+            var replyDiv = document.createElement("div");
+            replyDiv.setAttribute("class", "replies");
+            var replyMsg = document.createElement("div");
+            replyMsg.setAttribute("class", "replyMsgs");
+            replyMsg.innerHTML = reply;
+            replyDiv.appendChild(nameDiv);
+            replyDiv.appendChild(replyMsg);
+            outer.appendChild(replyDiv);
+        }
+    }
+    let pos = 0;
+    function search(){
+        var i;
+        titles = document.getElementsByClassName("titles");
+        console.log(titles.length);
+        document.getElementById("closeBtn").style.display = "block";
+        ul = document.getElementById("searchUl");
+        ul.style.display = "block";
+        for (i = pos; i < titles.length; i++)
+        {
+            if(titles[i] != undefined){
+                li = document.createElement("li");
+                a = document.createElement("a");
+                a.setAttribute("href", "#" + titles[i].textContent.trim());
+                a.innerHTML = titles[i].textContent;
+                li.appendChild(a);
+                ul.appendChild(li);
+            }
+        }
+        pos++;
+    }
+    function close(){
+        closeBtn = document.getElementById("closeBtn");
+        closeBtn.style.display = "none";
+        ul = document.getElementById("searchUl");
+        ul.style.display = "none";
+    }
+    
+</script>
+</html>

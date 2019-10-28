@@ -9,17 +9,21 @@ body{
 div#space{
   height:20px;
 }
-div#mainTitle{
-    background-color: #112d4e;
+header#mainTitle{
+    background-color: #222831;
     margin-left: 30px;
     margin-right: 30px;
     font-family: trebuchet;
     font-size: 1.9em;
     color:white;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition-property: all;
+    transition-duration: 1.3s;
   }
+img#logoImg{
+  width:260px;
+}
 div#vertDivLeft{
   position: fixed;
   top: 290px;
@@ -30,12 +34,14 @@ div#vertDivLeft{
   width: 140px;
   text-align: center;
   padding: 190px 15px;
-  background-color: #bad7df;
+  background-color: #eeeeee;
   opacity: 0.8;
+  transition-property: all;
+  transition-duration: 1.5s;
 }
 div#vertDivRight{
   position: fixed;
-  top: 290px;
+  top: 290pxx;
   bottom: 90px;
   right: 50px;
   color: #112d4e;
@@ -43,12 +49,26 @@ div#vertDivRight{
   width: 140px;
   text-align: center;
   padding: 190px 15px;
-  background-color: #bad7df;
+  background-color: #eeeeee;
   opacity: 0.8;
+  transition-property: all;
+  transition-duration: 1.3s;
+}
+div#vertDivLeft:hover{
+  top: 280px;
+  bottom: 80px;
+  background-color: #c7c3c3;
+  opacity:1;
 
 }
+div#vertDivRight:hover{
+  top: 280px;
+  bottom: 80px;
+  background-color: #c7c3c3;
+  opacity:1;
+}
 div.tile{
-  background-color: #3f72af;
+  background-color: #00adb5;
   margin-left: 250px;
   margin-right: 250px;
   font-family: trebuchet;
@@ -58,31 +78,73 @@ div.tile{
   text-align: left;
   padding-top: 15px;
   padding-bottom: 15px;
-
+  padding-right: 5%;
+  transition-property: all;
+  transition-duration: 1.3s;
 }
+div.tile:hover{
+  margin-left: 225px;
+  margin-right: 225px;
+  opacity: 1;
+  background-color: #008187;
+}
+a#aOrderFood:link{
+  text-decoration: none;
+}
+
 div.homeButtons{
   float: left;
-  border: 1px solid #112d4e;
+  border: 1px solid #222831;
   padding-left: 3px;
   padding-right: 3px;
   padding-bottom: 2px;
   padding-top: 2px;
-  background-color: #dbe2ef;
-  width: 31.05%;
+  background-color: #393e46;
+  width: 18.15%;
   text-align: center;
-  color: #112d4e;
+  color: #eeeeee;
   font-family: trebuchet;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+div.homeButtons:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
 }
 div#Home{
   margin-left: 30px;
 }
 
-img#logoImg{
-  width:220px;
+img#OrderFoodImg{
+  width: 200px;
+  height: 150px;
 }
-img.tile{
-  width:240px;
-  border-radius: 50%;
-  opacity:1;
-
+img#ResourcesImg{
+  width: 200px;
+  height: 150px;
+}
+img#LostAndFoundImg{
+  width:200px;
+  height: 150px;
+}
+div.footer{
+  display: table;
+  margin: 0 auto;
+}
+ul.footer{
+  list-style-type: none;
+  margin-left: 30px;
+  padding: 0;
+}
+li.footer{
+  float: left;
+  background-color: #393e46;
+  display: block;
+  color: #eeeeee;
+  padding: 10px;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 0.7s;
+}
+li.footer:hover{
+  background-color: #222831;
 }

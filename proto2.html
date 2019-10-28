@@ -2,11 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="proto1.css">
     <title></title>
   </head>
   <body>
+
+        <script type="text/javascript">
+          function moveup(){
+            document.getElementById("OrderFoodTile").style.transform = "rotate(20deg)";
+            document.getElementById("ResourcesTile").style.visibility = "hidden";
+            document.getElementById("mainTitle").style.transform = "scaleY(0.5)";
+            document.getElementById("mainTitle").style.position = "static";
+            document.getElementById("mainTitle").style.top = "0px";
+          }
+
+        </script>
     <header id="mainTitle">
       <img id="logoImg" src="logo2.png" alt="1PES">
     </header>
@@ -24,9 +35,6 @@
     <div id = "LostAndFound" class="homeButtons" style="margin-left:10px;">
       Lost and Found
     </div>
-    <div id = "LogIn" class="homeButtons" style="margin-left:10px;">
-      Login/ Sign Up
-    </div>
     <div style="clear:left; height:10px">
     </div>
     <div id = "vertDivLeft">
@@ -35,9 +43,9 @@
     <div id = "vertDivRight">
       Interesting stats and facts
     </div>
-    <a id = "aOrderFood" href = "https://www.google.com" target="_blank"><div class = "tile" id="OrderFoodTile">
-      <h3>&emsp;Order Food &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img id="OrderFoodImg" class="tile" src="orderfood.jpg" alt="Order Food" align="middle"></h3>
-    </div></a>
+    <div class = "tile" id="OrderFoodTile" onclick="moveup()">
+      <h3>&emsp;Order Food &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; <img id="OrderFoodImg" class="tile" src="orderfood.jpg" alt="Order Food" align="middle"></h3>
+    </div>
     <div id="space">
     </div>
     <div class = "tile" id="ResourcesTile">
@@ -48,17 +56,6 @@
     <div class = "tile" id="LostAndFoundTile">
       <h3>&emsp;Lost and Found &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="LostAndFoundImg" class="tile" src="lostandfound.jpg" alt="Lost and found" align="middle" ></h3>
     </div>
-    <footer>
-      <div class="footer">
-        <ul class = "footer">
-          <li class="footer">About Us</li>
-          <li class="footer">Contact Us</li>
-          <li class="footer">Feedback and Suggestions</li>
-          <li class="footer">Log Out</li>
-        </ul>
-      </div>
-    </footer>
-
 
 
 

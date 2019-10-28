@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manage Menu</title>
+    <link rel="stylesheet" href="food-management.css">
+</head>
+<body>
+    <header>
+        <div class="Title">
+            <h1>Manage menu</h1>
+        </div>
+    </header>
+    <div class="hotelNames">
+        <ul>
+            <li onclick="foodCourt()">Food Court</li>
+            <li onclick="southThindies()">South Thindies</li>
+            <li onclick="roofTopCafe()">Roof-top Cafe</li>
+        </ul>
+    </div>
+    <div class = "menuTile">
+        <div id = "foodCourt" style="visibility: visible;">
+            <form action="">
+                <table id="foodCourtTb"><caption><h2>Food Court</h2></caption>
+                    <tr><th>Menu</th><th>Price</th></tr>
+                    <tr><td><input type="checkbox" value="vegBiriyani" name="VegBiriyani" checked> Veg Biriyani</td><td><input type="number" name="VegBiriyaniPr" value="50"></td></tr>
+                    <tr><td><input type="checkbox" value="roti" name="Roti" checked> Roti</td><td><input type="number" name="RotiPr" value = "20"></td></tr> 
+                    <tr><td><input type="checkbox" value="rotiCurry" name="RotiCurry" checked> Roti Curry</td><td><input type="number" name="RotiCurryPr" value="50"></td></tr>
+                    <tr><td><input type="checkbox" value="rotiPaneer" name="RotiPaneer" checked> Roti Paneer</td><td><input type="number" name="RotiPaneerPr" value="50"></td></tr> 
+                    <tr><td><input type="checkbox" value="paneerCurry" name="PaneerCurry" checked> Paneer Curry</td><td><input type="number" name="PaneerCurryPr" value="50"></td></tr> 
+                    <tr><td><input type="checkbox" value="riceSambar" name="RiceSambar" checked> Rice Sambar </td><td><input type="number" name="RiceSambarPr" value="30"></td></tr>
+                    <tr><td><input type="checkbox" value="curdRice" name="CurdRice"> Curd Rice </td><td><input type="number" name="CurdRicePr" value="30"></td></tr>
+                    <tr><td><input type="checkbox" value="chickenBiriyani" name="ChickenBiriyani"> Chicken Biriyani </td><td><input type="number" name="ChickenBiriyaniPr" value="80"></td></tr>
+                    <tr><td><input type="checkbox" value="eggFriedRice" name="EggFriedRice"> Egg Fried Rice </td><td><input type="number" name="EggFriedRicePr" value="50"></td></tr>
+                </table>
+                <input type="button" value="Add another dish" onclick="anotherDish1()">
+                <input type="submit" value="Submit" id="sub">
+            </form>
+        </div>
+        <div id = "southThindies">
+            <form action="">
+                <table id="southThindiesTb"><caption><h2>South Thindies</h2></caption>
+                    <tr><th>Menu</th><th>Price</th></tr>
+                    <tr><td><input type="checkbox" name="Idli" value="idli" checked> Idli </td><td><input type="number" name="IdliPr" value="25"></td>
+                    <tr><td><input type="checkbox" name="Dosa" value="dosa" checked> Dosa </td><td><input type="number" name="DosaPr" value="35"></td></tr>
+                    <tr><td><input type="checkbox" name="MasalaDosa" value="masalaDosa" checked> Masala Dosa </td><td><input type="number" name="MasalaDosaPr" value="50"></td></tr>
+                    <tr><td><input type="checkbox" name="PaneerSandwich" value="paneerSandwich" checked> Paneer Sandwich </td><td><input type="number" name="PaneerSAndwichPr" value="50"></td></tr>
+                    <tr><td><input type="checkbox" name="CurdRice" value="curdRice"> Curd Rice </td><td><input type="number" name="CurdRicePr" value="30"></td></tr>
+                </table>
+                <input type="button" value="Add another dish" onclick="anotherDish2()">
+                <input type="submit" value="Submit" id="sub">
+            </form>
+        </div>
+        <div id = "roofTopCafe">
+            <form action="">
+                <table id="roofTopCafeTb"><caption><h2>Roof-Top Cafe</h2></caption>
+                    <tr><th>Menu</th><th>Price</th></tr>
+                    <tr><td><input type="checkbox" name="Idli" value="idli" checked> Idli </td><td><input type="number" name="IdliPr" value="25"></td>
+                    <tr><td><input type="checkbox" name="Dosa" value="dosa" checked> Dosa </td><td><input type="number" name="DosaPr" value="35"></td></tr>
+                    <tr><td><input type="checkbox" name="MasalaDosa" value="masalaDosa" checked> Masala Dosa </td><td><input type="number" name="MasalaDosaPr" value="50"></td></tr>
+                    <tr><td><input type="checkbox" name="PaneerSandwich" value="paneerSandwich" checked> Paneer Sandwich </td><td><input type="number" name="PaneerSandwichPr" value="50"></td></tr>
+                    <tr><td><input type="checkbox" name="BreadPakoda" value="breadPakoda" checked> Bread Pakoda</td><td><input type="number" name="BreadPakodaPR" value="20"></td></tr>
+                    <tr><td><input type="checkbox" name="CurdRice" value="curdRice"> Curd Rice </td><td><input type="number" name="CurdRicePr" value="30"></td></tr>
+                    <tr><td><input type="checkbox" name="Noodles" value="noodles"> Noodles</td><td><input type="number" name="NoodlesPr" value="70"></td></tr>
+                    <tr><td><input type="checkbox" name="Jamun" value="jamun"> Jamun</td><td><input type="number" name="JamunPr" value="20"></td></tr>
+                    <tr><td><input type="checkbox" name="CarrotHalwa" value="carrotHalwa"> Carrot Halwa</td><td><input type="number" name="CarrotHalwaPr" value="30"></td></tr>
+                </table>
+                <input type="button" value="Add another dish" onclick="anotherDish3()">
+                <input type="submit" value="Submit" id="sub">
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function foodCourt(){
+        document.getElementById("foodCourt").style.visibility = "visible";
+        document.getElementById("southThindies").style.visibility = "hidden";
+        document.getElementById("roofTopCafe").style.visibility = "hidden";
+    }
+    function southThindies(){
+        document.getElementById("southThindies").style.visibility = "visible";
+        document.getElementById("foodCourt").style.visibility = "hidden";
+        document.getElementById("roofTopCafe").style.visibility = "hidden";
+    }
+    function roofTopCafe(){
+        document.getElementById("roofTopCafe").style.visibility = "visible";
+        document.getElementById("foodCourt").style.visibility = "hidden";
+        document.getElementById("southThindies").style.visibility = "hidden";
+    }
+    function anotherDish1(){
+        var dish = prompt("Enter the dish");
+        var price = prompt("Enter the price");
+        var Tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var td2 = document.createElement("td");
+        var inp1 = document.createElement("input");
+        inp1.setAttribute("type", "checkbox");
+        inp1.setAttribute("checked", "checked");
+        inp1.setAttribute("name", dish);
+        inp1.setAttribute("value", dish);
+        var span1 = document.createElement("span");
+        span1.innerHTML = " "+dish;
+        var inp2 = document.createElement("input");
+        inp2.setAttribute("type", "number");
+        inp2.setAttribute("name", dish+"Pr");
+        inp2.setAttribute("value", parseInt(price));
+        td1.appendChild(inp1);
+        td1.appendChild(span1);
+        td2.appendChild(inp2);
+        Tr.appendChild(td1);
+        Tr.appendChild(td2);
+        var tb = document.getElementById("foodCourtTb");
+        tb.appendChild(Tr);
+    }
+    function anotherDish2(){
+        var dish = prompt("Enter the dish");
+        var price = prompt("Enter the price");
+        var Tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var td2 = document.createElement("td");
+        var inp1 = document.createElement("input");
+        inp1.setAttribute("type", "checkbox");
+        inp1.setAttribute("checked", "checked");
+        inp1.setAttribute("name", dish);
+        inp1.setAttribute("value", dish);
+        var span1 = document.createElement("span");
+        span1.innerHTML = " "+dish;
+        var inp2 = document.createElement("input");
+        inp2.setAttribute("type", "number");
+        inp2.setAttribute("name", dish+"Pr");
+        inp2.setAttribute("value", parseInt(price));
+        td1.appendChild(inp1);
+        td1.appendChild(span1);
+        td2.appendChild(inp2);
+        Tr.appendChild(td1);
+        Tr.appendChild(td2);
+        var tb = document.getElementById("southThindiesTb");
+        tb.appendChild(Tr);
+    }
+    function anotherDish3(){
+        var dish = prompt("Enter the dish");
+        var price = prompt("Enter the price");
+        var Tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var td2 = document.createElement("td");
+        var inp1 = document.createElement("input");
+        inp1.setAttribute("type", "checkbox");
+        inp1.setAttribute("checked", "checked");
+        inp1.setAttribute("name", dish);
+        inp1.setAttribute("value", dish);
+        var span1 = document.createElement("span");
+        span1.innerHTML = " "+dish;
+        var inp2 = document.createElement("input");
+        inp2.setAttribute("type", "number");
+        inp2.setAttribute("name", dish+"Pr");
+        inp2.setAttribute("value", parseInt(price));
+        td1.appendChild(inp1);
+        td1.appendChild(span1);
+        td2.appendChild(inp2);
+        Tr.appendChild(td1);
+        Tr.appendChild(td2);
+        var tb = document.getElementById("roofTopCafeTb");
+        tb.appendChild(Tr);
+    }
+</script>
+</html>
