@@ -88,7 +88,7 @@ div.replyMsgs{
     text-align: left;
     display: none;
 }
-#closeBtn{
-    display: none;
-    margin: auto;
+
+#searchUl.active{
+    display: block;
 }
