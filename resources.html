@@ -79,7 +79,7 @@
             outer.appendChild(replyDiv);
         }
     }
-    let pos = 0;
+    var pos = 0;
     function search(){
         var i;
         titles = document.getElementsByClassName("titles");
@@ -98,7 +98,7 @@
                 ul.appendChild(li);
             }
         }
-        pos++;
+        pos = i;
     }
     function close(){
         closeBtn = document.getElementById("closeBtn");
