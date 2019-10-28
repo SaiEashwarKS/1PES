@@ -18,7 +18,6 @@
         <div id="searchDiv">
             <input type="button" class="searchResource" value="See if someone has already requested for it" onclick="search()" />
             <br>
-            <input type="button" id="closeBtn" value="Close" onclick="close()" />
             <ul id="searchUl"></ul>
         </div>
         <i>Or</i><br>
@@ -84,9 +83,10 @@
         var i;
         titles = document.getElementsByClassName("titles");
         console.log(titles.length);
-        document.getElementById("closeBtn").style.display = "block";
+        //document.getElementById("closeBtn").classList.toggle('active');
         ul = document.getElementById("searchUl");
-        ul.style.display = "block";
+        //ul.style.display = "block";
+        ul.classList.toggle('active');
         for (i = pos; i < titles.length; i++)
         {
             if(titles[i] != undefined){
@@ -100,12 +100,7 @@
         }
         pos = i;
     }
-    function close(){
-        closeBtn = document.getElementById("closeBtn");
-        closeBtn.style.display = "none";
-        ul = document.getElementById("searchUl");
-        ul.style.display = "none";
-    }
+    
     
 </script>
 </html>
