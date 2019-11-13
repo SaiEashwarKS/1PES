@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: #000;
+  position: fixed;
+  top: -80px;
+  width: 100%;
+  display: block;
+  transition: top 0.2s;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: darkgrey;
+   color: white;
+   text-align: right;
+
+}
+
+.si {
+  font-size: 15px;
+  text-align: left;
+  font-family: Nirmala UI;
+}
+
+.si4 {
+  font-size: 17px;
+  text-align: left;
+  font-family: Nirmala UI;
+}
+
+.sii {
+  font-size: 12px;
+
+}
+
+.sii1 {
+  font-size: 18px;
+
+}
+
+.s3 {
+  font-size: 12px;
+  padding: 2px;
+  text-align: center;
+}
+
+div1 {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+h11 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+p1 {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+a1 {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+div.gallery {
+  display: inline-block;
+  margin: 10px;
+  border: 0px solid #000;
+  float: left;
+  width: 150px;
+  align-items: left;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  float: ;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+  <h2><br></h2>
+<p></p>
+
+<div class="footer" style = "font-family: Nirmala UI";>
+<div></div>
+<div class = "sii">&nbsp</div>
+  <div class = "sii">  <b> Contact Us</b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </div>
+    <div class = "sii">   Phone Number: 987654321 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  </div>
+      <div class = "sii">   Email Id: test@gmail.com &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   </div>
+        <div class = "sii">   Adress: class 3B &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    </div>
+        <div class = "sii">&nbsp</div>
+
+</div>
+
+<div id="navbar">
+  <img src="LOGO DESIGN.png" alt="Paris" width="80" height="80" style="margin-left: 15px;">
+<!--  <a href="#news">News</a>
+  <a href="#contact">Contact </a>-->
+  <a href="#menu"><div class = "sii1" style = "font-family: Nirmala UI";><br>MENU&nbsp</div></a>
+    <a href="FEEDBACK_FORM.html"><div class = "sii1" style = "font-family: Nirmala UI";><br>FEEDBACK FORM&nbsp&nbsp</div></a>
+
+</div>
+<div style="padding:15px 15px  200px; font-size:30px; text-align:right;">
+  <p></p>
+  <div class="si">
+    <p><b><div class="si4">&nbsp&nbsp&nbsp&nbsp&nbspAbout Us</div></b><br>
+&nbsp&nbsp&nbsp&nbsp1PES is a troubleshoot to the problems of heavy queues in the canteens <br>
+&nbsp&nbsp&nbsp&nbspThe developers who have experienced this have solved this problem with 1PES<br>
+</p>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="SAI.png">
+    <img src="SAI.png" alt="SAI" width="600" height="380">
+  </a>
+  <div class="s3">SAI EASHWAR</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="SRINATH.png">
+    <img src="SRINATH.png" alt="SRINATH" width="600" height="380">
+  </a>
+  <div class="s3">SRINATH H P</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="MINE.png">
+    <img src="MINE.png" alt="MINE" width="600" height="380">
+  </a>
+  <div class="s3">SWAROOP B S</div>
+</div>
+<!--
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="LOGO DESIGN.png">
+      <img src="LOGO DESIGN.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="LOGO DESIGN.png">
+      <img src="LOGO DESIGN.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="LOGO DESIGN.png">
+      <img src="LOGO DESIGN.png" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+-->
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+//window.onscroll = function() {scrollFunction()};
+document.getElementById("navbar").style.top = "0px";
+/*
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0px";
+  } else {
+    document.getElementById("navbar").style.top = "-500px";
+  }
+}
+*/
+
+</script>
+
+</body>
+
+</html>
